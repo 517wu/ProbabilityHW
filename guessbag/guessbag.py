@@ -1,7 +1,7 @@
 import random
 def getnum():
     a=[]
-    for i in range(10):
+    for i in range(100):
         a.append(random.randint(0,9))#1:red,0:yellow
     return a
 
@@ -16,7 +16,7 @@ random.shuffle(bag_index)
 ans=[]
 for i in bag_index:
     ans.append(anslist.get(i))
-print(ans)
+# print(ans)
 Rlist=[]
 Ylist=[]
 bag=[]
@@ -33,8 +33,7 @@ while x!=ans:
     for a in bag:
         R=Y=0
         for i in a:
-            
-            if i>=bag_index[bag.index(a)]:
+            if i<bag_index[bag.index(a)]:
                 R+=1
             else:
                 Y+=1
@@ -52,5 +51,5 @@ while x!=ans:
         #         target=i
         # print(target)
     x=input("請猜分別是哪一袋: ").upper().split()
-    print(x)
+    # print(x)
 print("finish")
