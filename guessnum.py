@@ -171,10 +171,10 @@ while A!=2:
     
 
     print(f"{A}A{B}B",end="\t")
-    print(aknownlist,bknownlist,check,change,numlist)
+    # print(aknownlist,bknownlist,check,change,numlist)
     if A!=2:
         p=c(len(numlist),check)*change
-        print(f"猜中機率:{1/p:.4f} (剩下{p}種可能)")
+        print(f"猜中機率:{1/p:.4f} (剩下{p}種可能)\n")
     
 
 if X=="-1":

@@ -1,0 +1,2 @@
+python ./guessnum.py
+pause
