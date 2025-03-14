@@ -1,7 +1,7 @@
 import random
 def getnum():
     a=[]
-    for i in range(100):
+    for i in range(5):
         a.append(random.randint(0,9))#1:red,0:yellow
     return a
 
